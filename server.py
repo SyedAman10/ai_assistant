@@ -9,7 +9,7 @@ load_dotenv()
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-CORS(app, resources={r"/*": {"origins": "*"}})  # Allow all origins
+CORS()  # Allow all origins
 
 app = Flask(__name__)
 
